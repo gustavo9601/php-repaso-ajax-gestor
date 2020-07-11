@@ -1,0 +1,13 @@
+max_file_uploads = 20
+post_max_size = 50M
+upload_max_filesize = 50M
+
+
+/***/
+FECHAS JAVASCRIPOT
+var meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+var diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+var f = new Date();
+$('.fechaActual').html(diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+
+

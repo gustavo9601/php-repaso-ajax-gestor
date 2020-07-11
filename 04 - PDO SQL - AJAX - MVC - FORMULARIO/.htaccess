@@ -1,0 +1,11 @@
+#Impedir que s epueda ver el listado de contenido de un directorio
+Options All -Indexes
+
+
+#Utilziar URL amigables -> esncesario validar con phpinfo si modelue_retwirte esta cargado
+#Activar el RewriteEngine, enciende el motor de rescritura
+RewriteEngine on
+#modficicamos que siempre aparesca otra cosa al action
+#para que funcion en todos lo slocation o href hacia url de php se debe deja solo el final ej:
+#usuarios -> index.php?action=usuarios
+RewriteRule ^(\w+)$ index.php?action=$1
